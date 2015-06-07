@@ -3,37 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GalaSoft.MvvmLight;
-using RadioPlayerLib.Resources;
+using Newtonsoft.Json;
 
 namespace RadioPlayerLib.ViewModel
 {
-    public class FrequencyViewModel : ViewModelBase
+    public class FrequencyViewModel
     {
-        public bool ListLoading { get; set; }
+        [JsonProperty("program")]
+        public string Program { get; set; }
 
-        public string NearestLoadErrorMessage { get; set; }
+        [JsonProperty("regional_program")]
+        public string RegionalProgram { get; set; }
 
-        public bool DisplayNearestLoadErrorMessage { 
-            get
-            {
-                return NearestLoadErrorMessage != null && NearestLoadErrorMessage.Length > 0;
-            } 
-        }
+        [JsonProperty("frequency")]
+        public string Frequency { get; set; }
 
-        public FrequencyViewModel()
-        {
-            if (!IsInDesignMode)
-            {
-                LoadData();
-            }
-        }
+        [JsonProperty("city")]
+        public string City { get; set; }
 
-        private void LoadData()
-        {
-            ListLoading = true;
+        [JsonProperty("longitude")]
+        public double Longitude { get; set; }
 
-            NearestLoadErrorMessage = ViewMessages.Loading_Position;
-        }
+        [JsonProperty("latitude")]
+        public double Latitude { get; set; }
+
     }
 }

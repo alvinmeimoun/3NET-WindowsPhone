@@ -16,9 +16,9 @@
         <converters:BooleanToVisibilityConverter x:Key="ReverseBooleanToVisibilityConverter" Reverse="True" />
     </UserControl.Resources>
     
-    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         
@@ -27,7 +27,32 @@
         </Grid>
         
         <Grid x:Name="GridListFrequency" Grid.Row="1">
-            
+            <ListBox ItemsSource="{Binding Frequencies}" HorizontalContentAlignment="Stretch">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="12,6,12,6" HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="{Binding Frequency}" Grid.Row="0" Grid.Column="1" FontSize="22" TextAlignment="Right" HorizontalAlignment="Stretch"/>
+                            <TextBlock Text="{Binding Program}" Grid.Row="0" Grid.Column="0" FontSize="22" TextAlignment="Left" HorizontalAlignment="Stretch"/>
+                            <TextBlock Text="{Binding City}" Grid.Row="1" Grid.Column="1" FontSize="15" TextAlignment="Right" HorizontalAlignment="Stretch"/>
+                            <TextBlock Text="{Binding RegionalProgram}" Grid.Row="1" Grid.Column="0" FontSize="15" TextAlignment="Left" HorizontalAlignment="Stretch"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
     </Grid>
 </UserControl>

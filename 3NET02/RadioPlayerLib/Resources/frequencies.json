@@ -1,0 +1,10 @@
+﻿[
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "87.7 FM", "city" : "Auron", "latitude" : 44.225833, "longitude" : 6.928889 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "105.5 FM", "city" : "Isola 2000", "latitude" : 44.184722, "longitude" : 7.160833 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "103.1 FM", "city" : "Barcelonnette", "latitude" : 44.398333, "longitude" : 6.641389 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "101.5 FM", "city" : "Allos", "latitude" : 44.230833, "longitude" : 6.610556 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "97.7 FM", "city" : "La Colmiane / Roquebillière", "latitude" : 44.0580563, "longitude" : 7.218056 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "93.7 FM", "city" : "Saint-Sauveur-sur-Tinée", "latitude" : 44.086278, "longitude" : 7.100278 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "91.4 FM", "city" : "Valberg", "latitude" : 44.095833, "longitude" : 6.929167 },
+    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "RNT 7B", "city" : "Nice", "latitude" : 43.721389, "longitude" : 7.321167 }
+]

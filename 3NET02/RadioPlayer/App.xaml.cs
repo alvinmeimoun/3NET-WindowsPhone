@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RadioPlayer.Resources;
+using RadioPlayer.Services;
 
 namespace RadioPlayer
 {
@@ -25,6 +26,9 @@ namespace RadioPlayer
         {
             // Gestionnaire global pour les exceptions non interceptées.
             UnhandledException += Application_UnhandledException;
+
+            //Initialisation des Services
+            ServicesFactory.RegisterServices();
 
             // Initialisation du XAML standard
             InitializeComponent();

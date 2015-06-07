@@ -8,8 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RadioPlayer.Resources {
+namespace RadioPlayerLib.Resources {
     using System;
+    using System.Reflection;
     
     
     /// <summary>
@@ -22,14 +23,14 @@ namespace RadioPlayer.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class AppResources {
+    public class ViewMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AppResources() {
+        internal ViewMessages() {
         }
         
         /// <summary>
@@ -39,7 +40,7 @@ namespace RadioPlayer.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RadioPlayer.Resources.AppResources", typeof(AppResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RadioPlayerLib.Resources.ViewMessages", typeof(ViewMessages).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +62,29 @@ namespace RadioPlayer.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Radio App.
+        ///   Recherche une chaîne localisée semblable à Obtention de la position.
         /// </summary>
-        public static string ApplicationTitle {
+        public static string Loading_Position {
             get {
-                return ResourceManager.GetString("ApplicationTitle", resourceCulture);
+                return ResourceManager.GetString("Loading_Position", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à LeftToRight.
+        ///   Recherche une chaîne localisée semblable à Une erreur est survenue lors de l&apos;obtention de la position.
         /// </summary>
-        public static string ResourceFlowDirection {
+        public static string Loading_Position_Error {
             get {
-                return ResourceManager.GetString("ResourceFlowDirection", resourceCulture);
+                return ResourceManager.GetString("Loading_Position_Error", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à fr-FR.
+        ///   Recherche une chaîne localisée semblable à La localisation est désactivée dans les paramètres du téléphone.
         /// </summary>
-        public static string ResourceLanguage {
+        public static string Position_Disabled {
             get {
-                return ResourceManager.GetString("ResourceLanguage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Fréquences.
-        /// </summary>
-        public static string TabFrequency {
-            get {
-                return ResourceManager.GetString("TabFrequency", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Direct.
-        /// </summary>
-        public static string TabPlayerLive {
-            get {
-                return ResourceManager.GetString("TabPlayerLive", resourceCulture);
+                return ResourceManager.GetString("Position_Disabled", resourceCulture);
             }
         }
     }

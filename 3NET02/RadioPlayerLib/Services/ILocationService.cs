@@ -13,6 +13,6 @@ namespace RadioPlayerLib.Services
         /// Obtient la position actuelle
         /// </summary>
         /// <returns>LocaitonPoint de la position actuelle</returns>
-        LocationPoint getCurrentLocation();
+        Task<LocationPoint> getCurrentLocation();
     }
 }

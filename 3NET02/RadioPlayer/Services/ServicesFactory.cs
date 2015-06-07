@@ -13,6 +13,7 @@ namespace RadioPlayer.Services
         public static void RegisterServices()
         {
             SimpleIoc.Default.Register<ILocationService, LocationServiceWP8>();
+            SimpleIoc.Default.Register<IStorageService, StorageServiceWP8>();
         }
     }
 }

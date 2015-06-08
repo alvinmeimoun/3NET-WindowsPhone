@@ -85,15 +85,18 @@ namespace RadioPlayerLib.ViewModel
                 NearestFrequency = nearestFreq;
                 RaisePropertyChanged("NearestFrequency");
                 NearestLoadErrorMessage = "";
+                RaisePropertyChanged("NearestLoadErrorMessage");
             }
             catch (LocationDisabledException lde)
             {
                 NearestLoadErrorMessage = ViewMessages.Position_Disabled;
+                RaisePropertyChanged("NearestLoadErrorMessage");
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.StackTrace);
                 NearestLoadErrorMessage = ViewMessages.Loading_Position_Error;
+                RaisePropertyChanged("NearestLoadErrorMessage");
             }
         }
     }

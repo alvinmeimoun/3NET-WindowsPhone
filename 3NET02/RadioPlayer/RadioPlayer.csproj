@@ -109,8 +109,12 @@
     <Compile Include="Services\LocationServiceWP8.cs" />
     <Compile Include="Services\ServicesFactory.cs" />
     <Compile Include="Services\StorageServiceWP8.cs" />
+    <Compile Include="Services\WebNavigationServiceWP8.cs" />
     <Compile Include="Views\ucFrequency.xaml.cs">
       <DependentUpon>ucFrequency.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucPlayer.xaml.cs">
+      <DependentUpon>ucPlayer.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ucFrequency.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ucPlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +147,11 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Icons\Domain-50.png" />
+    <Content Include="Assets\Icons\Key-50.png" />
+    <Content Include="Assets\Icons\New Post-50.png" />
+    <Content Include="Assets\Icons\Pause-50.png" />
+    <Content Include="Assets\Icons\Play-50.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -134,4 +134,13 @@
   <data name="TabPlayerLive" xml:space="preserve">
     <value>Direct</value>
   </data>
+  <data name="BtEmail" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="BtLogin" xml:space="preserve">
+    <value>Se connecter</value>
+  </data>
+  <data name="BtWebsite" xml:space="preserve">
+    <value>Site web</value>
+  </data>
 </root>

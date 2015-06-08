@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="RadioPlayer.Views.ucPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    DataContext="{Binding Player, Source={StaticResource Locator}}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BtPlayer" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Background="Crimson" Margin="6,6,0,0" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <Button.Content>
+                <Grid>
+                    
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="BtWebsite" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1" Background="Crimson" Margin="0,6,6,0" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Command="{Binding OpenWebsiteCommand}">
+            <Button.Content>
+                <Grid>
+                    <Image Source="../Assets/Icons/Domain-50.png" Margin="50"/>
+                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtWebsite, Source={StaticResource LocalizedStrings}}"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="BtEmail" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="0" Background="Crimson" Margin="6,0,0,6" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Command="{Binding SendEmailCommand}">
+            <Button.Content>
+                <Grid>
+                    <Image Source="../Assets/Icons/New Post-50.png" Margin="50"/>
+                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtEmail, Source={StaticResource LocalizedStrings}}"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="BtLogin" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Background="Crimson" Margin="0,0,6,6" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <Button.Content>
+                <Grid>
+                    <Image Source="../Assets/Icons/Key-50.png" Margin="50"/>
+                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtLogin, Source={StaticResource LocalizedStrings}}"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>

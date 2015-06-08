@@ -46,9 +46,11 @@
     </Compile>
     <Compile Include="Services\ILocationService.cs" />
     <Compile Include="Services\IStorageService.cs" />
+    <Compile Include="Services\IWebNavigationService.cs" />
     <Compile Include="ViewModel\FrequenciesViewModel.cs" />
     <Compile Include="ViewModel\FrequencyViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PlayerViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>

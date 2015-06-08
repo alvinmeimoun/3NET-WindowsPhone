@@ -70,6 +70,33 @@ namespace RadioPlayer.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contact.
+        /// </summary>
+        public static string BtEmail {
+            get {
+                return ResourceManager.GetString("BtEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Se connecter.
+        /// </summary>
+        public static string BtLogin {
+            get {
+                return ResourceManager.GetString("BtLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Site web.
+        /// </summary>
+        public static string BtWebsite {
+            get {
+                return ResourceManager.GetString("BtWebsite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {

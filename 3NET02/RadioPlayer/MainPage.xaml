@@ -17,7 +17,7 @@
 
     <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
         <phone:PanoramaItem Header="{Binding Path=LocalizedResources.TabPlayerLive, Source={StaticResource LocalizedStrings}}">
-            
+            <views:ucPlayer />
         </phone:PanoramaItem>
         <phone:PanoramaItem Header="{Binding Path=LocalizedResources.TabFrequency, Source={StaticResource LocalizedStrings}}">
             <views:ucFrequency/>

@@ -45,6 +45,7 @@ namespace RadioPlayerLib.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<FrequenciesViewModel>();
             SimpleIoc.Default.Register<PlayerViewModel>();
+            SimpleIoc.Default.Register<HistoryFrequenciesViewModel>();
         }
 
         public MainViewModel Main
@@ -68,6 +69,10 @@ namespace RadioPlayerLib.ViewModel
             get { return ServiceLocator.Current.GetInstance<PlayerViewModel>(); }
         }
 
+        public HistoryFrequenciesViewModel HistoryFrequencies
+        {
+            get { return ServiceLocator.Current.GetInstance<HistoryFrequenciesViewModel>(); }
+        }
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

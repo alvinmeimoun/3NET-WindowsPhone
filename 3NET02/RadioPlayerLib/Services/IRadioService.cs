@@ -9,7 +9,7 @@ namespace RadioPlayerLib.Services
 {
     public interface IRadioService
     {
-        void StartWebRadio(string streamUrl);
+        void StartWebRadio(string streamUrl, string title, string description);
         void StopWebRadio();
         bool IsWebRadioPlaying();
     }

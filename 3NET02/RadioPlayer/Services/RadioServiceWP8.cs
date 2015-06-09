@@ -10,9 +10,9 @@ namespace RadioPlayer.Services
 {
     public class RadioServiceWP8 : IRadioService
     {
-        public void StartWebRadio(string streamUrl)
+        public void StartWebRadio(string streamUrl, string title, string description)
         {
-            AudioTrack track = new AudioTrack(new Uri(streamUrl, UriKind.Absolute), "Radio Star", "Les meilleurs sons du sud", null, null);
+            AudioTrack track = new AudioTrack(new Uri(streamUrl, UriKind.Absolute), title, description, null, null);
             BackgroundAudioPlayer.Instance.Track = track;
             BackgroundAudioPlayer.Instance.Play();
         }

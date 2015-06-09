@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,24 @@ namespace RadioPlayer.Services
                 }
             }
             return "";
+        }
+
+        public T ObjectFromLocalStorage<T>(string key)
+        {
+            if (IsolatedStorageSettings.ApplicationSettings.Contains(key))
+            {
+                return (T) IsolatedStorageSettings.ApplicationSettings[key];
+            }
+            else
+            {
+                return default(T);
+            }
+        }
+
+        public void SaveToLocalStorage(string key, object data)
+        {
+            IsolatedStorageSettings.ApplicationSettings[key] = data;
+            IsolatedStorageSettings.ApplicationSettings.Save();
         }
     }
 }

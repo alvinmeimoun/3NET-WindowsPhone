@@ -52,11 +52,11 @@
                 </Grid>
             </Button.Content>
         </Button>
-        <Button x:Name="BtLogin" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Background="Crimson" Margin="0,0,6,6" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        <Button x:Name="BtHistory" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Background="Crimson" Margin="0,0,6,6" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <Button.Content>
                 <Grid>
-                    <Image Source="../Assets/Icons/Key-50.png" Margin="50"/>
-                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtLogin, Source={StaticResource LocalizedStrings}}"/>
+                    <Image Source="../Assets/Icons/Clock-50.png" Margin="50"/>
+                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtHistory, Source={StaticResource LocalizedStrings}}"/>
                 </Grid>
             </Button.Content>
         </Button>

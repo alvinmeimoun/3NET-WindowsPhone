@@ -137,13 +137,16 @@
   <data name="BtEmail" xml:space="preserve">
     <value>Contact</value>
   </data>
-  <data name="BtLogin" xml:space="preserve">
-    <value>Se connecter</value>
+  <data name="BtHistory" xml:space="preserve">
+    <value>Historique</value>
   </data>
   <data name="BtWebsite" xml:space="preserve">
     <value>Site web</value>
   </data>
   <data name="BtEcouter" xml:space="preserve">
     <value>Ecouter</value>
+  </data>
+  <data name="TitleHistoryFrequencies" xml:space="preserve">
+    <value>Historique de fréquences</value>
   </data>
 </root>

@@ -88,11 +88,11 @@ namespace RadioPlayer.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Se connecter.
+        ///   Recherche une chaîne localisée semblable à Historique.
         /// </summary>
-        public static string BtLogin {
+        public static string BtHistory {
             get {
-                return ResourceManager.GetString("BtLogin", resourceCulture);
+                return ResourceManager.GetString("BtHistory", resourceCulture);
             }
         }
         
@@ -138,6 +138,15 @@ namespace RadioPlayer.Resources {
         public static string TabPlayerLive {
             get {
                 return ResourceManager.GetString("TabPlayerLive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Historique de fréquences.
+        /// </summary>
+        public static string TitleHistoryFrequencies {
+            get {
+                return ResourceManager.GetString("TitleHistoryFrequencies", resourceCulture);
             }
         }
     }

@@ -86,6 +86,26 @@ namespace RadioPlayerLib.ViewModel
                 RaisePropertyChanged("NearestFrequency");
                 NearestLoadErrorMessage = "";
                 RaisePropertyChanged("NearestLoadErrorMessage");
+
+                //Persist de la fréquence
+                var storedHistoryStr = storageService.ObjectFromLocalStorage<string>("FrequencyHistory");
+                List<FrequencyHistoryViewModel> storedHistoryVM = null;
+                if (storedHistoryStr == null)
+                {
+                    storedHistoryVM = new List<FrequencyHistoryViewModel>();
+                }
+                else
+                {
+                    JsonConvert.DeserializeObject<List<FrequencyHistoryViewModel>>(storedHistoryStr);
+                }
+
+                storedHistoryVM.Add(new FrequencyHistoryViewModel()
+                {
+                    Frequency = nearestFreq.Frequency,
+                    FindDate = DateTime.Now,
+                    Location = nearestFreq.City
+                });
+                storageService.SaveToLocalStorage("FrequencyHistory", JsonConvert.SerializeObject(storedHistoryVM));
             }
             catch (LocationDisabledException lde)
             {

@@ -23,7 +23,7 @@ namespace RadioPlayer.Views
         private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
         {
             this.BtEmail.Height = this.BtEmail.ActualWidth;
-            this.BtLogin.Height = this.BtLogin.ActualWidth;
+            this.BtHistory.Height = this.BtHistory.ActualWidth;
             this.BtWebsite.Height = this.BtWebsite.ActualWidth;
             this.BtPlayer.Height = this.BtPlayer.ActualWidth;
         }

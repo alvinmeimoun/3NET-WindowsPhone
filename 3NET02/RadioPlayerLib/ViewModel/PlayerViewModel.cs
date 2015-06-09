@@ -50,7 +50,7 @@ namespace RadioPlayerLib.ViewModel
             }
             else
             {
-                radioService.StartWebRadio("http://mp3lg3.tdf-cdn.com/4931/rad_143644.mp3");
+                radioService.StartWebRadio("http://mp3lg3.tdf-cdn.com/4931/rad_143644.mp3", "Radio Star", "Les meilleurs sons du sud");
             }
 
             IsPlaying = !IsPlaying;

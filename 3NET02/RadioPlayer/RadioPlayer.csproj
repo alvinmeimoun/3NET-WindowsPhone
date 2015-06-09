@@ -107,10 +107,14 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\LocationServiceWP8.cs" />
+    <Compile Include="Services\NavigationServiceWP8.cs" />
     <Compile Include="Services\RadioServiceWP8.cs" />
     <Compile Include="Services\ServicesFactory.cs" />
     <Compile Include="Services\StorageServiceWP8.cs" />
     <Compile Include="Services\WebNavigationServiceWP8.cs" />
+    <Compile Include="Views\pFrequencyHistory.xaml.cs">
+      <DependentUpon>pFrequencyHistory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ucFrequency.xaml.cs">
       <DependentUpon>ucFrequency.xaml</DependentUpon>
     </Compile>
@@ -124,6 +128,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\pFrequencyHistory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,6 +156,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Icons\Clock-50.png" />
     <Content Include="Assets\Icons\Domain-50.png" />
     <Content Include="Assets\Icons\Key-50.png" />
     <Content Include="Assets\Icons\New Post-50.png" />

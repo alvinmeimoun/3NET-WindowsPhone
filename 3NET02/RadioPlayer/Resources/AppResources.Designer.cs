@@ -70,6 +70,15 @@ namespace RadioPlayer.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ecouter.
+        /// </summary>
+        public static string BtEcouter {
+            get {
+                return ResourceManager.GetString("BtEcouter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Contact.
         /// </summary>
         public static string BtEmail {

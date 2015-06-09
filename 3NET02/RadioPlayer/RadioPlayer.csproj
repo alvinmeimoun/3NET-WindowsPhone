@@ -107,6 +107,7 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\LocationServiceWP8.cs" />
+    <Compile Include="Services\RadioServiceWP8.cs" />
     <Compile Include="Services\ServicesFactory.cs" />
     <Compile Include="Services\StorageServiceWP8.cs" />
     <Compile Include="Services\WebNavigationServiceWP8.cs" />
@@ -196,6 +197,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\RadioPlayerAgent\RadioPlayerAgent.csproj">
+      <Project>{2e19e16e-a1a6-4821-999e-65e6b89939bc}</Project>
+      <Name>RadioPlayerAgent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RadioPlayerLib\RadioPlayerLib.csproj">
       <Project>{62cbf23c-867c-43ac-a846-fadd7362709f}</Project>
       <Name>RadioPlayerLib</Name>

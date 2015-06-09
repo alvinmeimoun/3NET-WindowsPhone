@@ -143,4 +143,7 @@
   <data name="BtWebsite" xml:space="preserve">
     <value>Site web</value>
   </data>
+  <data name="BtEcouter" xml:space="preserve">
+    <value>Ecouter</value>
+  </data>
 </root>

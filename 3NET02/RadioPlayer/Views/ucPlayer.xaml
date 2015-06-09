@@ -3,12 +3,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="clr-namespace:RadioPlayer.Converters"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     DataContext="{Binding Player, Source={StaticResource Locator}}"
     d:DesignHeight="480" d:DesignWidth="480">
+    
+    <UserControl.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converters:BooleanToVisibilityConverter x:Key="ReverseBooleanToVisibilityConverter" Reverse="True" />
+    </UserControl.Resources>
     
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -21,10 +27,12 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="BtPlayer" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Background="Crimson" Margin="6,6,0,0" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        <Button x:Name="BtPlayer" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Background="Crimson" Margin="6,6,0,0" BorderThickness="0" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Command="{Binding SwitchPlayingCommand}">
             <Button.Content>
                 <Grid>
-                    
+                    <Image Visibility="{Binding IsPlaying, Converter={StaticResource ReverseBooleanToVisibilityConverter}}" Source="../Assets/Icons/Play-50.png" Margin="50"/>
+                    <Image Visibility="{Binding IsPlaying, Converter={StaticResource BooleanToVisibilityConverter}}" Source="../Assets/Icons/Pause-50.png" Margin="50"/>
+                    <TextBlock TextAlignment="Left" VerticalAlignment="Bottom" Margin="6,0,0,6" Text="{Binding Path=LocalizedResources.BtEcouter, Source={StaticResource LocalizedStrings}}"/>
                 </Grid>
             </Button.Content>
         </Button>

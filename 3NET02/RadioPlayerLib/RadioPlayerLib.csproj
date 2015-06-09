@@ -45,6 +45,7 @@
       <DependentUpon>ViewMessages.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\ILocationService.cs" />
+    <Compile Include="Services\IRadioService.cs" />
     <Compile Include="Services\IStorageService.cs" />
     <Compile Include="Services\IWebNavigationService.cs" />
     <Compile Include="ViewModel\FrequenciesViewModel.cs" />

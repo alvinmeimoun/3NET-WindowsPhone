@@ -15,6 +15,7 @@ namespace RadioPlayer.Services
             SimpleIoc.Default.Register<ILocationService, LocationServiceWP8>();
             SimpleIoc.Default.Register<IStorageService, StorageServiceWP8>();
             SimpleIoc.Default.Register<IWebNavigationService, WebNavigationServiceWP8>();
+            SimpleIoc.Default.Register<IRadioService, RadioServiceWP8>();
         }
     }
 }

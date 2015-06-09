@@ -96,7 +96,7 @@ namespace RadioPlayerLib.ViewModel
                 }
                 else
                 {
-                    JsonConvert.DeserializeObject<List<FrequencyHistoryViewModel>>(storedHistoryStr);
+                    storedHistoryVM = JsonConvert.DeserializeObject<List<FrequencyHistoryViewModel>>(storedHistoryStr);
                 }
 
                 storedHistoryVM.Add(new FrequencyHistoryViewModel()

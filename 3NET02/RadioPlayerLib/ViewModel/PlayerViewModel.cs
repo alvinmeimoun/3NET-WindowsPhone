@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using RadioPlayerLib.Services;
 
 namespace RadioPlayerLib.ViewModel
@@ -17,14 +18,17 @@ namespace RadioPlayerLib.ViewModel
             this.OpenWebsiteCommand = new RelayCommand(this.OpenWebsite);
             this.SendEmailCommand = new RelayCommand(this.OpenEmailClient);
             this.SwitchPlayingCommand = new RelayCommand(this.SwitchPlaying);
+            this.OpenHistoryCommand = new RelayCommand(this.OpenHistory);
 
-            this.IsPlaying = false;
+            var radioService = SimpleIoc.Default.GetInstance<IRadioService>();
+            this.IsPlaying = radioService.IsWebRadioPlaying();
         }
 
         public RelayCommand OpenWebsiteCommand { get; private set; }
         public RelayCommand SendEmailCommand { get; private set; }
 
         public RelayCommand SwitchPlayingCommand { get; private set; }
+        public RelayCommand OpenHistoryCommand { get; private set; }
 
         public bool IsPlaying { get; set; }
 
@@ -38,6 +42,12 @@ namespace RadioPlayerLib.ViewModel
         {
             var webNavigationService = SimpleIoc.Default.GetInstance<IWebNavigationService>();
             webNavigationService.openEmailAppWithReceiver("test@test.com");
+        }
+
+        private void OpenHistory()
+        {
+            var navigationService = SimpleIoc.Default.GetInstance<INavigationService>();
+            navigationService.NavigateTo(NavigationServiceBase.KEY_HISTORY_PAGE);
         }
 
         private void SwitchPlaying()

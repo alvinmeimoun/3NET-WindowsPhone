@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GalaSoft.MvvmLight.Views;
 using RadioPlayerLib.Services;
 
 namespace RadioPlayer.Services
@@ -16,6 +17,7 @@ namespace RadioPlayer.Services
             SimpleIoc.Default.Register<IStorageService, StorageServiceWP8>();
             SimpleIoc.Default.Register<IWebNavigationService, WebNavigationServiceWP8>();
             SimpleIoc.Default.Register<IRadioService, RadioServiceWP8>();
+            SimpleIoc.Default.Register<INavigationService, NavigationServiceWP8>();
         }
     }
 }

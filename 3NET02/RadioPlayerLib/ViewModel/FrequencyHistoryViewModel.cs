@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace RadioPlayerLib.ViewModel
 {
-    public class FrequencyHistoryViewModel : ViewModelBase
+    public class FrequencyHistoryViewModel
     {
         [JsonProperty("frequency")]
         public string Frequency { get; set; }
@@ -16,5 +16,14 @@ namespace RadioPlayerLib.ViewModel
         public string Location { get; set; }
         [JsonProperty("find_date")]
         public DateTime FindDate { get; set; }
+
+        [JsonIgnore]
+        public string FindDateText
+        {
+            get
+            {
+                return String.Format("{0:d/M/yyyy HH:mm:ss}", FindDate);
+            }
+        }
     }
 }

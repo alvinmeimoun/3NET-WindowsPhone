@@ -6,5 +6,13 @@
     { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "97.7 FM", "city" : "La Colmiane / Roquebillière", "latitude" : 44.0580563, "longitude" : 7.218056 },
     { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "93.7 FM", "city" : "Saint-Sauveur-sur-Tinée", "latitude" : 44.086278, "longitude" : 7.100278 },
     { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "91.4 FM", "city" : "Valberg", "latitude" : 44.095833, "longitude" : 6.929167 },
-    { "program" : "Oxygène", "regional_program" : "Mercantour", "frequency" : "RNT 7B", "city" : "Nice", "latitude" : 43.721389, "longitude" : 7.321167 }
+    { "program": "Oxygène", "regional_program": "Mercantour", "frequency": "RNT 7B", "city": "Nice", "latitude": 43.721389, "longitude": 7.321167 },
+    { "program": "Oxygène", "regional_program": "Hautes-Alpes", "frequency": "88.1 FM", "city": "La Pendine", "latitude": 44.802778, "longitude": 6.455833 },
+    { "program": "Oxygène", "regional_program": "Hautes-Alpes", "frequency": "96.5 FM", "city": "Risoul", "latitude": 44.611111, "longitude": 6.612778 },
+    { "program": "Oxygène", "regional_program": "Hautes-Alpes", "frequency": "99.4 FM", "city": "Vars", "latitude": 44.575417, "longitude": 6.699889 },
+    { "program": "Oxygène", "regional_program": "Oisans", "frequency": "90.4 FM", "city": "L'Alpe-d'Huez", "latitude": 45.089722, "longitude": 6.070000 },
+    { "program": "Oxygène", "regional_program": "Oisans", "frequency": "94.2 FM", "city": "Le Fioc", "latitude": 45.014444, "longitude": 6.110000 },
+    { "program": "Oxygène", "regional_program": "Vercors", "frequency": "100.6 FM", "city": "Combeauvieux", "latitude": 45.004917, "longitude": 5.541389 },
+    { "program": "Oxygène", "regional_program": "Val d'Isère", "frequency": "104.3 FM", "city": "Combeauvieux", "latitude": 45.448056, "longitude": 6.987500 },
+    { "program": "Oxygène", "regional_program": "Maurienne", "frequency" : "106.6 FM", "city" : "Combeauvieux", "latitude" : 45.271389, "longitude" : 6.848056 }
 ]
